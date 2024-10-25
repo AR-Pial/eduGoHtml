@@ -1,0 +1,42 @@
+@media (min-width: 1200px) {
+    .banner-image{
+        height: 100vh;
+    }
+    .navbar-logo{
+        max-width: 150px;
+    }
+    .container{
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+    h1{
+        font-size: 45px !important;
+    }
+
+    .col-lg-6-5 {
+        flex: 0 0 54.1667%; /* 6.5 out of 12 columns */
+        max-width: 54.1667%;
+    }
+    /* Custom 5.5-column width */
+    .col-lg-5-5 {
+        flex: 0 0 45.8333%; /* 5.5 out of 12 columns */
+        max-width: 45.8333%;
+    }
+
+    .sevices-card{
+        min-height: 440px;
+    }
+
+    .sevices-card p{
+        font-size: 16px !important;
+    }
+}
+@media (min-width: 921px ) and (max-width: 1199px) {
+    .navbar-logo{
+        max-width: 120px !important ;
+    }
+    .sevices-card{
+        min-height: 380px;
+    }
+
+}

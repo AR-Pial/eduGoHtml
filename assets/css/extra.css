@@ -1,0 +1,21 @@
+body {
+    font-family: 'Open Sans', sans-serif; /* Example usage */
+}
+
+/* Classes or elements using the fonts */
+.roboto {
+    font-family: 'Roboto', sans-serif;
+}
+
+.roboto-medium {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500; /* Medium */
+}
+
+.roboto-condensed {
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.services-card{
+    min-width: 120px !important;
+}
