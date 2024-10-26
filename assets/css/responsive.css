@@ -5,9 +5,13 @@
     .navbar-logo{
         max-width: 150px;
     }
-    .container{
-        padding-left: 40px;
-        padding-right: 40px;
+    /* .container{
+        padding-left: 45px;
+        padding-right: 45px;
+    } */
+    .container {
+        margin-left: 100px; /* Adjust this value */
+        margin-right: 100px; /* Adjust this value */
     }
     h1{
         font-size: 45px !important;
