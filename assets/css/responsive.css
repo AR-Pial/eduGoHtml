@@ -5,26 +5,26 @@
     .navbar-logo{
         max-width: 150px;
     }
-    /* .container{
-        padding-left: 45px;
-        padding-right: 45px;
-    } */
-    .container {
-        margin-left: 100px; /* Adjust this value */
-        margin-right: 100px; /* Adjust this value */
+    .container{
+        padding-left: 60px !important;
+        padding-right: 60px !important;
     }
+   
     h1{
         font-size: 45px !important;
     }
-
-    .col-lg-6-5 {
-        flex: 0 0 54.1667%; /* 6.5 out of 12 columns */
-        max-width: 54.1667%;
+    .py-lg-extra {
+        padding-top: 4rem !important;
+        padding-bottom: 4rem !important;
     }
-    /* Custom 5.5-column width */
-    .col-lg-5-5 {
-        flex: 0 0 45.8333%; /* 5.5 out of 12 columns */
-        max-width: 45.8333%;
+    
+    .ms-lg-extra{
+        margin-left: 6rem !important;
+        margin-right: 6rem !important;
+    }
+
+    .w-lg-23{
+        width: 23% !important;
     }
 
     .sevices-card{
