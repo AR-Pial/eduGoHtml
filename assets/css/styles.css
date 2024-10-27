@@ -72,7 +72,7 @@ h1{
     background-position: center;
     background-clip: padding-box;
     /* height: 400px;  */
-    height: 72vh;
+    height: 82vh;
 }
 /* Adding the dark shadow using ::before */
 .banner-image::before {
@@ -133,13 +133,30 @@ h1{
 }
 
 .navbar-nav .nav-link {
-    color: rgba(255, 255, 255, 0.7); 
+    /* color: rgba(255, 255, 255, 0.7);  */
+    color: rgba(0, 0, 0, 0.6);
     /* font-size: 16px; */
 }
 
-.navbar-nav .nav-link:hover,
+/* .navbar-nav .nav-link:hover, */
 .navbar-nav .nav-link.active {
-    color: #ffffff; /* Change color on hover or when active */
+    /* color: #ffffff; */
+    color: #d11329;
+}
+
+.navbar {
+    position: relative;
+    z-index: 10;
+}
+
+.navbar-container {
+    position: absolute;
+    top: 100%; /* Place dropdown below the navbar */
+    left: 0;
+    width: 100%;
+}
+.navbar-collapse{
+    background-color: #fff;
 }
 
 /* Default state - when the navbar is collapsed (closed) */
@@ -166,12 +183,24 @@ h1{
 }
 
 .dropdown-menu li:last-child {
-    margin-bottom: 0; /* Remove the margin from the last item */
+    margin-bottom: 0; 
 }
 
 .navbar-logo{
     max-width: 100px;
 }
+
+/* .nav-link{
+    border-bottom: 1px solid #eaeaea;
+} */
+
+.navbar .nav-link:not(:last-child) {
+    border-bottom: 2px solid #eaeaea;
+    padding-top: 7px;
+    padding-bottom: 15px;
+}
+
+
 
 /* .welcome-text{
     font-size: 45px;
@@ -202,7 +231,7 @@ h1{
     background-color: #fff;
     border: none;
     border-radius: 0px;
-    padding: 22px 30px;
+    padding: 20px 30px;
 }
 .custom-btn:hover{
     background-color: #be0f23;

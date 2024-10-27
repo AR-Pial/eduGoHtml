@@ -22,27 +22,31 @@
         <div class="banner-content d-flex flex-column align-items-center">
             <!-- navbar -->
             <nav class="col-12 navbar navbar-expand-lg bg-transparent">
-                <div class="container-fluid px-lg-4 mx-lg-2 py-lg-2">
+                <div class="container-fluid navbar-container px-0 px-lg-4 py-lg-2">
                     <div class="px-lg-1">
                         <a class="navbar-brand" href="#">
-                            <img class="navbar-logo" src="../assets/images/logo.jpg" alt="">
+                            <img class="navbar-logo ms-3" src="../assets/images/logo.jpg" alt="">
                         </a>
                     </div>
                     
-                    <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <button id="navbarToggle" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <!-- <span class="navbar-toggler-icon crimson-red"></span> -->
-                        <svg class="ast-mobile-svg ast-menu-svg crimson-red" fill="currentColor" version="1.1" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                            <path d="M3 13h18c0.552 0 1-0.448 1-1s-0.448-1-1-1h-18c-0.552 0-1 0.448-1 1s0.448 1 1 1zM3 7h18c0.552 0 1-0.448 1-1s-0.448-1-1-1h-18c-0.552 0-1 0.448-1 1s0.448 1 1 1zM3 19h18c0.552 0 1-0.448 1-1s-0.448-1-1-1h-18c-0.552 0-1 0.448-1 1s0.448 1 1 1z"></path>
+                        <svg id="nav-menu-icon" class="ast-mobile-svg ast-menu-svg d-block crimson-red" width="24" height="24" viewBox="0 0 24 24">
+                            <path fill="#d11329" d="M3 13h18c0.552 0 1-0.448 1-1s-0.448-1-1-1h-18c-0.552 0-1 0.448-1 1s0.448 1 1 1zM3 7h18c0.552 0 1-0.448 1-1s-0.448-1-1-1h-18c-0.552 0-1 0.448-1 1s0.448 1 1 1zM3 19h18c0.552 0 1-0.448 1-1s-0.448-1-1-1h-18c-0.552 0-1 0.448-1 1s0.448 1 1 1z"></path>
+                        </svg>
+                        <svg id="nav-close-icon" class="ast-mobile-svg ast-close-svg d-none crimson-red" width="24" height="24" viewBox="0 0 24 24">
+                            <path fill="#d11329"  d="M18.3 5.71l-1.41-1.41L12 10.59 7.11 5.71 5.7 7.12 10.59 12l-4.89 4.89 1.41 1.41L12 13.41l4.89 4.89 1.41-1.41L13.41 12z"></path>
                         </svg>
                     </button>
-                    <div class="collapse navbar-collapse  " id="navbarSupportedContent">
-                        <ul class="navbar-nav w-100 d-flex flex-column flex-lg-row justify-content-lg-end gap-2 px-1  mb-2 mb-lg-0">
-                            <li class="nav-item">
+                    <div class="collapse navbar-collapse mt-3 mt-lg-0" id="navbarSupportedContent">
+                        <ul class="navbar-nav w-100 d-flex flex-column flex-lg-row justify-content-lg-end gap-2 px-3 px-lg-1 mb-2 mb-lg-0">
+                            <li class="nav-item"></li>
                                 <a class="nav-link active" aria-current="page" href="#">Home</a>
                             </li>
                             <li class="nav-item"></li>
                                 <a class="nav-link" aria-current="page" href="#">About Us</a>
                             </li>
+                            
 
                             <li class="nav-item"></li>
                                 <a class="nav-link" aria-current="page" href="#">Services</a>
@@ -100,14 +104,14 @@
                 <img class="w-100 home-about-img" src="../assets/images/about-01.jpg" alt="">
             </div>
             <div class="col-12 col-lg-6 py-4 p-lg-5 d-flex flex-column justify-content-center align-items-center order-1 order-lg-2">
-                <div class="w-100 pt-lg-5 pb-2 px-lg-5 text-center text-lg-start">
-                    <div class="px-lg-3">
+                <div class="w-100 pt-lg-5 pb-2 px-lg-5 text-start">
+                    <div class="px-3 px-lg-3">
                         <h1>Edugo International</h1>
                         <h1>"Study World Wide"</h1>
                     </div>
                 </div>
-                <div class="w-100 py-2 px-lg-5 text-muted">
-                    <ul class="px-lg-3 w-100 py-2 text-muted">
+                <div class="w-100 py-2 px-3 px-lg-5">
+                    <ul class="px-lg-3 px-0 w-100 py-1 py-lg-2 text-muted">
                         <li>Assist clients with visa applications and transitions to studying in their chosen country.</li>
                         <li>Provide personalized services with utmost honesty and integrity.</li>
                         <li>Offer guidance on lifestyle, tuition fees, and living costs abroad.</li>
@@ -118,7 +122,7 @@
                     </ul>
                 </div>
 
-                <div class="w-100 pt-1 pt-lg-3 px-lg-5 text-center">
+                <div class="w-100 px-3 mx-lg-2 pt-1 pt-lg-3 px-lg-5 text-lg-center">
                     <button class="mx-lg-3 custom-btn">Read More</button>
                 </div>
             </div>
@@ -221,9 +225,9 @@
 
     <!-- footer section starts -->
     <footer>
-        <div class="container text-white py-5">
+        <div class="text-white">
             <!-- main footer -->
-            <div class="row py-lg-5">
+            <div class="container row mx-auto  py-lg-5">
                 <div class="col-12 col-lg-5 d-flex flex-column text-center text-lg-start flex-lg-row  gap-3">
                     <div>
                         <h2 class="footer-header mb-3 pb-lg-2">ADDRESS:</h2>
@@ -266,6 +270,11 @@
                     </div>
                 </div>
             </div>
+            <hr>
+            <!-- copy right section-->
+            <div>
+            copy
+            </div>
         </div>
     </footer>
     <!-- footer section starts -->
@@ -276,6 +285,20 @@
     <script src="https://cdn.jsdelivr.net/npm/tsparticles@2.11.0/tsparticles.bundle.min.js"></script>
     <!-- Custom JS -->
     <script src="../assets/js/scripts.js"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const toggleButton = document.getElementById('navbarToggle');
+            const menuIcon = document.getElementById('nav-menu-icon');
+            const closeIcon = document.getElementById('nav-close-icon');
+
+            toggleButton.addEventListener('click', function() {
+                console.log("ok clocked")
+                menuIcon.classList.toggle('d-none'); // Toggle menu icon visibility
+                closeIcon.classList.toggle('d-none'); // Toggle close icon visibility
+            });
+        });
+    </script>
 
     <script>
         const canvas = document.getElementById('particleCanvas');

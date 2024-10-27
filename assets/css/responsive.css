@@ -34,6 +34,21 @@
     .sevices-card p{
         font-size: 16px !important;
     }
+    .navbar-nav .nav-link {
+        color: rgba(255, 255, 255, 0.7) !important;  
+    }
+    .navbar-nav .nav-link:hover,
+    .navbar-nav .nav-link.active {
+        color: #ffffff !important;
+    }
+    .navbar-collapse{
+        background-color: transparent !important;
+    }
+    .navbar .nav-link {
+        border-bottom: none !important;
+        padding-top: 0px !important;
+        padding-bottom: 0px !important;
+    }
 }
 @media (min-width: 921px ) and (max-width: 1199px) {
     .navbar-logo{
