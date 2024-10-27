@@ -1,9 +1,12 @@
 @media (min-width: 1200px) {
+    .home-banner-image{
+        height: 100vh !important;
+    }
     .banner-image{
-        height: 100vh;
+        height: 70vh !important;
     }
     .navbar-logo{
-        max-width: 150px;
+        max-width: 150px !important;
     }
     .container{
         padding-left: 60px !important;
@@ -51,6 +54,14 @@
     }
     .copyright{
         font-size: 16px !important;
+    }
+    .banner-header-text{
+        font-size: 60px !important;
+        line-height: 72px !important;
+    }
+    .custom-header1{
+        font-size: 30px;
+        line-height: 42px;
     }
 }
 @media (min-width: 921px ) and (max-width: 1199px) {
