@@ -202,6 +202,7 @@ h1{
 
 
 
+
 /* .welcome-text{
     font-size: 45px;
     text-transform: uppercase;
@@ -245,20 +246,34 @@ h1{
     content: "– "; /* Add a dash before each item */
     
 }
-.home-about-img{
-    position: relative;
-    background-image: url('../images/about-01.jpg'); /* Change this to the path of your image */
-    background-size: cover; 
-    background-position: center;
-    /* height: 400px;  */
-    /* height: 72vh; */
-}
-/* Adding the dark shadow using ::before */
-.home-about-img::before {
+/* .home-about-img-container{
 
-    background-color: rgba(0, 0, 0, 0.35); /* Transparent black shadow */
-    z-index: 1; /* Ensures the overlay is above the image but below the content */
+} */
+.home-about-img-container {
+    position: relative;
+    display: inline-block; /* or block */
 }
+
+.home-about-img-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3); /* Adjust the opacity to your preference */
+    z-index: 1;
+}
+
+.home-about-img {
+    display: block;
+    width: 100%;
+    height: auto;
+    position: relative;
+    z-index: 0;
+}
+
+
 
 /* services */
 .sevices-bg{
@@ -327,6 +342,13 @@ footer{
     fill: #d11329; /* Set the color */
     /* width: 30px;  */
     height: 40px;
+}
+
+.footer-hr{
+    border-bottom: .5px solid #eaeaea;
+}
+.copyright{
+    font-size: 15px;
 }
 
 
