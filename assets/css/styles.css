@@ -209,10 +209,16 @@ h1{
 .navbar-toggler:focus {
     outline: none;
     box-shadow: none;
+    border: none;
 }
-.navbar-toggler[aria-expanded="true"] {
+.navbar-toggler{
+    outline: none;
+    box-shadow: none;
+    border: none;
+}
+/* .navbar-toggler[aria-expanded="true"] {
     border: .5px dotted #d11329 !important; 
-}
+} */
 .dropdown-item:hover {
     color: #d11329;
     background-color: transparent;
