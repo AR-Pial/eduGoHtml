@@ -303,10 +303,10 @@ h1{
 }
 
 /* home */
-.home-about ul {
+.dashed-ul {
     list-style-type: none !important; /* Remove default list style */
 }
-.home-about ul li::before {
+.dashed-ul li::before {
     content: "– "; /* Add a dash before each item */
     
 }
@@ -337,16 +337,51 @@ h1{
     z-index: 0;
 }
 
-
-
 /* services */
-.sevices-bg{
+
+.services-container {
     position: relative;
-    background-image: url('../images/selective-focus-multi-color-confetti.jpg'); /* Change this to the path of your image */
+    width: 100%;
+    background-color: #d11329;
+}
+
+.services-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .4); 
+    z-index: 1;
+    pointer-events: none; /* Optional, lets clicks go through */
+}
+
+.services-bg-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: 0;
+}
+
+.services-bg-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.services-content {
+    position: relative;
+    z-index: 2; 
+}
+/* .sevices-bg{
+    position: relative;
+    background-image: url('../images/services_bg.jpg');
     background-size: cover; 
     background-position: center;
-    /* height: 400px;  */
-    /* height: 72vh; */
 }
 .sevices-bg::before {
     content: '';
@@ -355,12 +390,12 @@ h1{
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(0, 0, 0, .4); /* Transparent black shadow */
-    z-index: 1; /* Ensures the overlay is above the image but below the content */
-}
+    background-color: rgba(0, 0, 0, .4); 
+    z-index: 1; 
+}  */
 .sevices-content {
     position: relative;
-    z-index: 2; /* Ensure content is above the particles and shadow */
+    z-index: 2; 
 }
 .sevices-card{
     min-height: 320px;
@@ -390,19 +425,23 @@ h1{
     font-size: 19px;
 }
 
+/* about us */
+.about-us-texts{
+    color: rgba(0, 0, 0, 0.6);
+    line-height: 30px !important;
+}
+
+
+
+/* country */
+
+
 /* contact us */
 .contact-icon-fs{
     font-size: 3rem !important;
 }
 .contact-info-fs{
     font-size: 18px !important;
-}
-
-/* country */
-.country-text{
-    font-family: 'Roboto', sans-serif;
-    font-weight: 400;
-    color: rgba(0, 0, 0, 0.6);
 }
 
 /* others */
@@ -432,6 +471,17 @@ footer{
 }
 .copyright{
     font-size: 15px;
+}
+.bolder-text{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    color: rgba(0, 0, 0, 0.6);
+}
+.muted-text{
+    color: rgba(0, 0, 0, 0.6);
+}
+.line-height-30{
+    line-height: 30px;
 }
 
 

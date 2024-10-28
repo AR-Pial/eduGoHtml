@@ -7,19 +7,189 @@
     
     <!-- Bootstrap CSS -->
     <link href="../assets/bootstrap-5.2.3-dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- font awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- Custom CSS -->
     <link href="../assets/css/styles.css" rel="stylesheet">
-    <link href="../assets/css/responsive.css" rel="stylesheet">  
+    <link href="../assets/css/responsive.css" rel="stylesheet"> 
 </head>
 <body>
     <!-- navbar & banner -->
-    <div>
-        <img src="../assets/images/contact_us.jpg" alt="">
+    <div class="banner-container">
+        <img class="banner-image" src="../assets/images/bg-img.jpg" alt="Banner Image">
+        <!-- navbar starts -->
+        <nav class="col-12 navbar navbar-expand-lg banner-navbar ">
+            <div class="container-fluid navbar-container px-0 px-lg-4 py-lg-2">
+                <div class="px-lg-1">
+                    <a class="navbar-brand" href="#">
+                        <img class="navbar-logo ms-3" src="../assets/images/logo.jpg" alt="">
+                    </a>
+                </div>
+                
+                <button id="navbarToggle" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <!-- <span class="navbar-toggler-icon crimson-red"></span> -->
+                    <svg id="nav-menu-icon" class="ast-mobile-svg ast-menu-svg d-block crimson-red" width="24" height="24" viewBox="0 0 24 24">
+                        <path fill="#d11329" d="M3 13h18c0.552 0 1-0.448 1-1s-0.448-1-1-1h-18c-0.552 0-1 0.448-1 1s0.448 1 1 1zM3 7h18c0.552 0 1-0.448 1-1s-0.448-1-1-1h-18c-0.552 0-1 0.448-1 1s0.448 1 1 1zM3 19h18c0.552 0 1-0.448 1-1s-0.448-1-1-1h-18c-0.552 0-1 0.448-1 1s0.448 1 1 1z"></path>
+                    </svg>
+                    <svg id="nav-close-icon" class="ast-mobile-svg ast-close-svg d-none crimson-red" width="24" height="24" viewBox="0 0 24 24">
+                        <path fill="#d11329"  d="M18.3 5.71l-1.41-1.41L12 10.59 7.11 5.71 5.7 7.12 10.59 12l-4.89 4.89 1.41 1.41L12 13.41l4.89 4.89 1.41-1.41L13.41 12z"></path>
+                    </svg>
+                </button>
+                <div class="collapse navbar-collapse mt-3 mt-lg-0" id="navbarSupportedContent">
+                    <ul class="navbar-nav w-100 d-flex flex-column flex-lg-row justify-content-lg-end gap-2 px-3 px-lg-1 mb-2 mb-lg-0">
+                        <li class="nav-item"></li>
+                            <a class="nav-link active" aria-current="page" href="./home.html">Home</a>
+                        </li>
+                        <li class="nav-item"></li>
+                            <a class="nav-link" aria-current="page" href="./about_us.html">About Us</a>
+                        </li>
+                        
+
+                        <li class="nav-item"></li>
+                            <a class="nav-link" aria-current="page" href="./services.html">Services</a>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Countries
+                            </a>
+                            <ul class="dropdown-menu mt-lg-3">
+                                <li><a class="dropdown-item" href="./country.html">Australia</a></li>
+                                <li><a class="dropdown-item" href="./country.html">Argentina</a></li>
+                                <li><a class="dropdown-item" href="./country.html">Saudi Arab</a></li>
+                                <li><a class="dropdown-item" href="./country.html">Bangladesh</a></li>
+                                <li><a class="dropdown-item" href="./country.html">USA</a></li>
+                                <li><a class="dropdown-item" href="./country.html">Turkey</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item"></li>
+                            <a class="nav-link" aria-current="page" href="./gallery.html">Gallery</a>
+                        </li>
+                        <li class="nav-item"></li>
+                            <a class="nav-link" aria-current="page" href="./news.html">News</a>
+                        </li>
+                        <li class="nav-item"></li>
+                            <a class="nav-link" aria-current="page" href="./contact_us.html">Contacts</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- navbar end-->
+        <!-- banner header starts-->
+        <div class="banner-header">
+            <div class="w-100 container d-flex flex-column">
+                <h2 class="banner-header-text py-0 text-start">About Us</h2>
+            </div>
+        </div>
+        <!-- banner header starts -->
     </div>
     <!-- navbar & banner starts -->
 
     <!-- main section starts -->
     <main>
+        <!-- about section -->
+        <div class="row w-100">
+            <div class="col-5 d-flex">
+                <img class="w-100" src="../assets/images/about-img.jpg" alt="">
+            </div>
+            <div class="col-7 d-flex px-2 px-lg-5 py-3 py-lg-5 flex-column">
+                <div class="py-2">
+                    <h1>Edugo International</h1>
+                    <h1>"Study World Wide"</h1>
+                </div>
+                <div class="about-us-texts py-2">
+                    <p>
+                        Company’s <span class="bolder-text">Co-Founder & CEO</span>  Mr. <span class="bolder-text">Rezwan Kawser</span>  has helped over 5000 students to study, live and work in Australia,
+                        Canada, UK, USA, NZ, Denmark, Netherlands, Dubai, Malta & Malaysia during his professional career while leading Canadian,
+                        Australian EdTech company as Senior Country Manager – Bangladesh since Oct 2011. After contributing 13 years in the higher
+                        education industry, Mr. Rezwan Kawser has initiated EduGo International in partnership with another <span class="bolder-text">Co- Founder & CMO</span>  Mr.
+                       <span class="bolder-text">Mosharrof Hossain Khan Emran</span> . Mr. Emran also contributing in higher education since 2018 with a very good track record. 
+                    </p>
+                    <p>
+                        As an international student recruitment agency EduGo International makes the process of applying for study abroad simple for our students.
+                        We provide the complete range of services including advice on courses selections, institutions find out, accommodation, overseas student health
+                        cover (OSHC), airport pick- up, opening bank accounts and translation of documents, CA reports, visa application till enrollment to the institutions. 
+                    </p>
+                    <p>
+                        EduGo International (Branded Name is EG International) is a Domestic and International Education consulting organization with excellent credentials that provides
+                        value-based services was founded officially in September 2021. At present, we are one of the leading international and domestic student recruitment  & Solutions
+                        Company based in Bangladesh recruiting students from Bangladesh, India, Bhutan, Maldives, Nepal, Pakistan, Sri Lanka, Mainland China and Malaysia. 
+                    </p>
+                    <p>
+                        We have been assisting international institutes in student recruitment, Market research, institutional tie-ups, and exploring new business opportunities. Our aim 
+                        is to maintain the market on a professional level with a view to a long-term partnership with the educational institutions or our business partner in <span class="bolder-text"> Australia, Canada, 
+                        United Kingdom, USA, Netherlands, Denmark, Dubai, Malta and Malaysia</span>. EduGo International’s humble beginnings were with an initial team of two staff. Since then, the company has successfully 
+                        grown in both the size of our team and in the number of students we have been able to assist over the years. Our sales and results have grown enormously, with growth exceeding 80% in the last year. 
+                        The company receives compliments and rave reviews from educational institutions, not only for outstanding growth in student enrollment numbers and matching increases in revenue generation, but also for 
+                        our quality of service and high levels of student satisfaction.    
+                    </p>
+                </div>
+                
+            </div>
+        </div>
+        <div class="container about-us-texts py-3 py-lg-4">
+            <p>We have been assisting international institutes in student recruitment, Market research, institutional Tie ups and exploring new business opportunities. Our aim is to
+                maintain the market on a professional level with a view to a long–term partnership with the educational institutions or our 
+                business partner in Australia, Canada, United Kingdom, USA, Netherlands, Denmark and Malaysia. EduGo International’s
+                humble beginnings were with an initial team of two marketing staff. Since then, company has successfully grown in both the size of our
+                team and in the number of students we have been able to assist over the years. Our sales and results have grown enormously, with growth exceeding 80% in the last year. 
+                Company receives compliments and rave reviews from educational institutions, not only for outstanding growth in student enrollment numbers and matching increases in revenue generation
+                , but also for our qualityof service and high levels of student satisfaction.
+            </p>
+            <p class="fw-bolder px-0 bolder-text">We’re one of the fastest growing education agencies in Bangladesh:</p>
+            <p>
+                Trusting an education agency with student’s future can be hard. We have been there, we know and hence EduGo International is on a mission to make international
+                education accessible since our inception in 2021. Our global footprints span 2 (two) countries and as you will discover we are truly different.
+            </p>
+            <p>
+                Almost all our education counselors have been international students at some point in their lives, so we really understand what it’s like to be considering international study.
+            </p>
+            <p>
+                We take the time to understand your education, migration and career goals, and then help you make them happen.
+            </p>
+            <p class="fw-bolder px-0 bolder-text">Here is why you need to speak to us:</p>
+            <ul>
+                <li>Our fully qualified team will be here to guide you through every step of the way from identifying your goals to recommending and applying for a course and institute with best career outcomes for you.</li>
+                <li>We can offset costs by finding scholarships and a lot of universities will waive off application fees when students apply through us.</li>
+                <li>From history to engineering, hospitality to biology, we can make your study dreams a reality through our partner institutions. We represent and recruit students for 600+ top universities and institutes globally.
+                </li>
+                <li>We have an in–house team of registered migration agents to help you navigate the visas you require for whichever country you wish to study in Australia, Canada, US, Malaysia & NZ.</li>
+            </ul>
+        </div>
+
+        <div class="bg-white">
+            <div class="container py-4 py-lg-5">
+                <h1 class="text-capitalize">Our Vision</h1>
+                <ul class="dashed-ul px-lg-3 px-0 w-100 py-1 py-lg-2 muted-text line-height-30">
+                    <li>To evolve a nation with professionals in all the areas of academic pursuit, following the global trends of education in one umbrella.
+                    </li>
+                    <li>To successfully place students for the course at a institution only that are in the best interest of the student or their profile.</li>
+                    <li>To promote all round development of students abilities and personalities and empower the potential.</li>
+                    <li>To provide effortless and distinctive quality service and commit to improve continually.</li>
+                    <li>To maintain the high standard of professionalism, performance and quality to establish exemplary excellence in higher education, and work together with
+                        prospective students and overseas colleges, universities and associate organizations.
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="container py-5 my-lg-3  row mx-auto">
+            <div class="col-12 col-lg-4 order-2 order-lg-1">
+                <img class="w-100" src="../assets/images/values-img.jpeg" alt="">
+            </div>
+            <div class="col-12 col-lg-8 order-1 order-lg-2">
+                <h1 class="text-capitalize px-lg-2 ">Our Values</h1>
+                <ul class="dashed-ul px-lg-3 px-0 w-100 py-1 py-lg-2 muted-text line-height-30">
+                    <li>Honesty, Integrity and Objectivity</li>
+                    <li>Open Communication and Transparency</li>
+                    <li>Professional Skills</li>
+                    <li>Confidentiality and Professional Behavior</li>
+                    <li>Inclusiveness, Impartiality and Respect</li>
+                    <li>Consideration, Empathy and Inspiration</li>
+                </ul>
+            </div>
+        </div>
         
     </main>
     <!-- main section ends -->
