@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     toggleButton.addEventListener('click', function() {
         console.log("ok clocked")
-        menuIcon.classList.toggle('d-none'); // Toggle menu icon visibility
-        closeIcon.classList.toggle('d-none'); // Toggle close icon visibility
+        menuIcon.classList.toggle('d-none'); 
+        closeIcon.classList.toggle('d-none'); 
     });
 });

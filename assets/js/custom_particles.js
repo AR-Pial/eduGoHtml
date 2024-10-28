@@ -5,18 +5,18 @@ canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
 
 let particles = [];
-const numParticles = 280; // Total number of particles
-const connectionDistance = 135; // Max distance for connections
-const maxConnections = 6; // Max connections per particle
+const numParticles = 280; 
+const connectionDistance = 135; 
+const maxConnections = 6; 
 
 // Create particle object
 function Particle(x, y) {
     this.x = x;
     this.y = y;
-    this.size = Math.random() * 0.4 + 1; // Random size between 1 and 6
-    this.speedX = Math.random() * 3 - 1; // Random speed in x direction
-    this.speedY = Math.random() * 3 - 1; // Random speed in y direction
-    this.connections = []; // Array to track connected particles
+    this.size = Math.random() * 0.4 + 1; 
+    this.speedX = Math.random() * 3 - 1; 
+    this.speedY = Math.random() * 3 - 1; 
+    this.connections = []; 
 }
 
 // Initialize particles
@@ -36,12 +36,12 @@ function animate() {
         // Draw particle
         ctx.beginPath();
         ctx.arc(particle.x, particle.y, particle.size, 0, Math.PI * 2);
-        ctx.fillStyle = 'rgba(255, 255, 255, 0.6)'; // Particle color
+        ctx.fillStyle = 'rgba(255, 255, 255, 0.6)'; 
         ctx.fill();
 
         // Reset connections for the current frame
         particle.connections = [];
-        let connections = 0; // Track the number of connections made
+        let connections = 0; 
 
         // Create connections with nearby particles
         for (let j = 0; j < particles.length; j++) {
@@ -55,17 +55,17 @@ function animate() {
                 // Connect if within distance and max connections not reached
                 if (distance < connectionDistance && connections < maxConnections) {
                     // Apply a soft fade transition for connection lines
-                    if (opacity < 0) opacity = 0; // Ensure opacity doesn't go negative
+                    if (opacity < 0) opacity = 0;
 
-                    ctx.strokeStyle = `rgba(255, 255, 255, ${opacity * 0.6})`; // Line color with opacity
+                    ctx.strokeStyle = `rgba(255, 255, 255, ${opacity * 0.6})`; 
                     ctx.lineWidth = .4;
                     ctx.beginPath();
                     ctx.moveTo(particle.x, particle.y);
                     ctx.lineTo(otherParticle.x, otherParticle.y);
                     ctx.stroke();
 
-                    connections++; // Increment connection count
-                    particle.connections.push(otherParticle); // Add to connections
+                    connections++; 
+                    particle.connections.push(otherParticle); 
                 }
             }
         }

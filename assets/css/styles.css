@@ -83,11 +83,8 @@ h1{
     background-size: cover; 
     background-position: center;
     background-attachment: fixed;
-    /* height: 400px;  */
     height: 82vh;
 }
-
-/* Adding the dark shadow using ::before */
 .home-banner-image::before {
     content: '';
     position: absolute;
@@ -95,15 +92,13 @@ h1{
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(0, 0, 0, 0.68); /* Transparent black shadow */
-    z-index: 1; /* Ensures the overlay is above the image but below the content */
+    background-color: rgba(0, 0, 0, 0.68); 
+    z-index: 1; 
 }
 
-
-/* Ensure the content stays above the overlay */
 .home-banner-image * {
     position: relative;
-    z-index: 3; /* Make the text/content appear above the shadow and particles */
+    z-index: 3; 
 }
 
 .banner-container {
@@ -168,13 +163,13 @@ h1{
     left: 0;
     width: 100%;
     height: 100%;
-    z-index: 2; /* Ensure the particles are between the overlay and content */
+    z-index: 2;
 }
 
 /* Banner Content */
 .banner-content {
     position: relative;
-    z-index: 3; /* Ensure content is above the particles and shadow */
+    z-index: 3;
     height: 100%;
 }
 
@@ -187,14 +182,10 @@ h1{
 }
 
 .navbar-nav .nav-link {
-    /* color: rgba(255, 255, 255, 0.7);  */
     color: rgba(0, 0, 0, 0.6);
-    /* font-size: 16px; */
 }
 
-/* .navbar-nav .nav-link:hover, */
 .navbar-nav .nav-link.active {
-    /* color: #ffffff; */
     color: #d11329;
 }
 
@@ -205,23 +196,19 @@ h1{
 
 .navbar-container {
     position: absolute;
-    top: 100%; /* Place dropdown below the navbar */
+    top: 100%; 
     left: 0;
     width: 100%;
 }
 .navbar-collapse{
     background-color: #fff;
 }
-
-/* Default state - when the navbar is collapsed (closed) */
 .navbar-toggler:focus {
     outline: none;
-    box-shadow: none; /* Removes any additional shadow that may appear */
+    box-shadow: none;
 }
-
-/* When the navbar is opened (expanded) */
 .navbar-toggler[aria-expanded="true"] {
-    border: .5px dotted #d11329 !important; /* Dotted border when opened */
+    border: .5px dotted #d11329 !important; 
 }
 .dropdown-item:hover {
     color: #d11329;
@@ -233,7 +220,7 @@ h1{
     border-top: 2px solid #d11329;
 }
 .dropdown-menu li {
-    margin-bottom: 10px; /* Adjust this value for the desired gap size */
+    margin-bottom: 10px;
 }
 
 .dropdown-menu li:last-child {
@@ -244,22 +231,11 @@ h1{
     max-width: 100px;
 }
 
-/* .nav-link{
-    border-bottom: 1px solid #eaeaea;
-} */
-
 .navbar .nav-link:not(:last-child) {
     border-bottom: 2px solid #eaeaea;
     padding-top: 7px;
     padding-bottom: 15px;
 }
-
-
-
-/* .welcome-text{
-    font-size: 45px;
-    text-transform: uppercase;
-} */
 
 /* buttons */
 .custom-btn{
@@ -305,18 +281,16 @@ h1{
 
 /* home */
 .dashed-ul {
-    list-style-type: none !important; /* Remove default list style */
+    list-style-type: none !important; 
 }
 .dashed-ul li::before {
-    content: "– "; /* Add a dash before each item */
+    content: "– "; 
     
 }
-/* .home-about-img-container{
 
-} */
 .home-about-img-container {
     position: relative;
-    display: inline-block; /* or block */
+    display: inline-block;
 }
 
 .home-about-img-container::before {
@@ -339,7 +313,6 @@ h1{
 }
 
 /* services */
-
 .services-container {
     position: relative;
     width: 100%;
@@ -355,9 +328,8 @@ h1{
     height: 100%;
     background-color: rgba(0, 0, 0, .4); 
     z-index: 1;
-    pointer-events: none; /* Optional, lets clicks go through */
+    pointer-events: none; 
 }
-
 .services-bg-image {
     position: absolute;
     top: 0;
@@ -378,26 +350,7 @@ h1{
     position: relative;
     z-index: 2; 
 }
-/* .sevices-bg{
-    position: relative;
-    background-image: url('../images/services_bg.jpg');
-    background-size: cover; 
-    background-position: center;
-}
-.sevices-bg::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(0, 0, 0, .4); 
-    z-index: 1; 
-}  */
-.sevices-content {
-    position: relative;
-    z-index: 2; 
-}
+
 .sevices-card{
     min-height: 320px;
 }
@@ -409,7 +362,6 @@ h1{
 }
 
 /* Home counter */
-
 .home-counter-card{
     border: 16px solid rgba(0, 0, 0, 0.6);
     text-transform: uppercase;
@@ -431,11 +383,6 @@ h1{
     color: rgba(0, 0, 0, 0.6);
     line-height: 30px !important;
 }
-
-
-
-/* country */
-
 
 /* contact us */
 .contact-icon-fs{
@@ -462,8 +409,7 @@ footer{
 }
 
 .social-icon {
-    fill: #d11329; /* Set the color */
-    /* width: 30px;  */
+    fill: #d11329; 
     height: 40px;
 }
 
